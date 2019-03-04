@@ -1,49 +1,6 @@
 = YAPBENZET
 
-Gurkan Gokdemir <https://github.com/gurkangokdemir[@gurkangokdemir]>; 
-
-This document is also available in the following languages: +
-{uri-rel-file-base}README-zh_CN.adoc[汉语]
-|
-{uri-rel-file-base}README-de.adoc[Deutsch]
-|
-{uri-rel-file-base}README-fr.adoc[Français]
-|
-{uri-rel-file-base}README-jp.adoc[日本語]
-endif::[]
-
-.Key documentation
-[.compact]
-* {uri-docs}/what-is-asciidoc[What is AsciiDoc?]
-* {uri-docs}/asciidoc-writers-guide[AsciiDoc Writer's Guide]
-* {uri-docs}/user-manual[YAPBENZET
- User Manual]
-* {uri-docs}/asciidoc-syntax-quick-reference[AsciiDoc Syntax Reference]
-
-ifdef::status[]
-.*Project health*
-image:https://img.shields.io/travis/YAPBENZET
-/YAPBENZET
-/master.svg[Build Status (Travis CI), link=https://travis-ci.org/YAPBENZET
-/YAPBENZET
-]
-image:https://ci.appveyor.com/api/projects/status/ifplu67oxvgn6ceq/branch/master?svg=true&amp;passingText=green%20bar&amp;failingText=%23fail&amp;pendingText=building%2E%2E%2E[Build Status (AppVeyor), link=https://ci.appveyor.com/project/YAPBENZET
-/YAPBENZET
-]
-/YAPBENZET
-/master.svg[Coverage Status, link=https://coveralls.io/r/YAPBENZET
-/YAPBENZET
-]
-/YAPBENZET
-/badges/gpa.svg[Code Climate, link="https://codeclimate.com/github/YAPBENZET
-/YAPBENZET
-"]
-image:https://inch-ci.org/github/YAPBENZET
-/YAPBENZET
-.svg?branch=master[Inline docs, link="https://inch-ci.org/github/YAPBENZET
-/YAPBENZET
-"]
-endif::[]
+Gurkan Gokdemir <https://github.com/gurkangokdemir[@gurkangokdemir]>
 
 == Sponsors
 
