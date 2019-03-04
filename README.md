@@ -1,0 +1,2 @@
+# yapbenzet
+Yazılım Yönetim Süreçleri
