@@ -117,20 +117,25 @@ Click << bookmark-a >> to browse the pictures section.
 ====
 
 = 7. About Linux
-*Linux is my favorite OS.
-*I like to install Linux on my computer.
 
-=Project Example
+Do you like linux?
+* [] Yes
 
-==My Project
+
+* Linux is my favorite OS.
+* I like to install Linux on my computer.
+
+= Project Example
+
+== My Project
 
 I just want to add an example pragraph here. Its gonna be an article soon. But not right now.
 
-==Linux
+== Linux
 
-*Linux is my favorite operating system.
-*Being open source is big plus.
-*You can add and develop new parts to it.
+* Linux is my favorite operating system.
+* Being open source is big plus.
+* You can add and develop new parts to it.
 
 ====
 
