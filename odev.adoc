@@ -91,11 +91,8 @@ Table of two columns, a header, and two rows of content
 | 1st
 | 2nd
 
-Prolab 1
-Prolab 2
-
-Yazlab 1
-| Yazlab 2
+ Programming
+ 
 | ===
 
 = 9.WARDS
