@@ -47,7 +47,7 @@ image: sunset.jpg [Sunset, 150,150, role = "right"] Sunset
 
 == Block
 
-video :: https: //www.youtube.com
+video::https://www.youtube.com/watch?v=UzxYlbK2c7E[Neural Nets]
 
 == Embedded Youtube Videos
 
