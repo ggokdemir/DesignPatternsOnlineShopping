@@ -7,7 +7,7 @@ https://asciidoctor.org [Asciidoct is]
 
 == With Spaces and Special Characters
 
-link: https: //support.apple.com/kb/PH23625? locale = en_US & viewlocale = en_US [Special Characters Apple Support]
+link: https: //support.apple.com
 
 == Relative
 
@@ -29,19 +29,17 @@ For external links, please click << External >>.
 
 == Block Picture
 
-image :: octocat.jpg [mascot]
+image :: picture.jpg [mascot]
 
-image :: https: //asciidoctor.org/images/octocat.jpg [Github Mascot]
+image :: https: //asciidoctor.org/images/image.jpg [Github Mascot]
 
 == Inline
 
-To start, click image: https: //d33wubrfki0l68.cloudfront.net/f7fd8f96eddbcbe7c4de8ddf1f094f6659b3df06/bae11/images/icons/play.png [title = "Pause"].
+To start, click image: https: //www.cloudfront.net [title = "Pause"].
 
 Click image: play.png [title = "Pause"] to start.
 
 == Inline image with positioning role
-
-image: https: //d33wubrfki0l68.cloudfront.net/dbfc383d23401ccbed7262a1822dba9babecb949/69a10/images/sunset.jpg [Sunset, 150,150, role = "right"] Sunset
 
 image: sunset.jpg [Sunset, 150,150, role = "right"] Sunset
 
@@ -49,12 +47,9 @@ image: sunset.jpg [Sunset, 150,150, role = "right"] Sunset
 
 == Block
 
-
-video :: https: //www.youtube.com/watch? v = w3jLJU7DT5E & frags = pl% 2Cwn [What is Github]
+video :: https: //www.youtube.com
 
 == Embedded Youtube Videos
-
-:: w3jlju7dt5 the video [YouTube]
 
 = 4.Java Code
 
@@ -126,7 +121,4 @@ Convert the .md format of the readme file to asciidoc.
 ====
 Click << bookmark-a >> to browse the pictures section.
 ====
-Geri bildirim gönder
-Geçmiş
-Kaydedilenler
-Topluluk
+
