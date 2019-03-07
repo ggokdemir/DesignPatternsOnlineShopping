@@ -7,7 +7,7 @@ https://asciidoctor.org [Asciidoct is]
 
 == With Spaces and Special Characters
 
-link: https: //support.apple.com
+link:https://support.apple.com/kb/PH23625?locale=en_US&viewlocale=en_US[Special Characters Apple Support]
 
 == Relative
 
@@ -119,7 +119,9 @@ Click << bookmark-a >> to browse the pictures section.
 = 7. About Linux
 
 Do you like linux?
-* [] Yes
+
+* [*] Yes
+* [x] Yes
 
 
 * Linux is my favorite OS.
