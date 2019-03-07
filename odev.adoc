@@ -11,7 +11,7 @@ link:https://support.apple.com/kb/PH23625?locale=en_US&viewlocale=en_US[Special 
 
 == Relative
 
-link: Home.asciidoc [Home Page]
+link:Home.asciidoc [Home Page]
 
 Link with attributes
 
@@ -39,7 +39,7 @@ Click image: play.png [title = "Pause"] to start.
 
 == Inline image with positioning role
 
-image: sunset.jpg [Sunset, 150,150, role = "right"] Sunset
+image:sunset.jpg [Sunset, 150,150, role = "right"] Sunset
 
 = 3.Videos
 
