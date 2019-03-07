@@ -122,3 +122,6 @@ Convert the .md format of the readme file to asciidoc.
 Click << bookmark-a >> to browse the pictures section.
 ====
 
+= 7. About Linux
+*Linux is my favorite OS.
+*I like to install Linux on my computer.
