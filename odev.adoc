@@ -114,7 +114,7 @@ Convert the .md format of the readme file to asciidoc.
 
 = 6. REFERING TO A TITLE ON THE SUBMISSION
 
-[MEDICINE]
+[TIP]
 ====
 Click << bookmark-a >> to browse the pictures section.
 ====
