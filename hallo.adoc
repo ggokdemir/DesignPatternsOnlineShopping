@@ -1,0 +1,132 @@
+
+= 1. Links to Web Sites Used for Examples
+
+== External
+
+https://asciidoctor.org [Asciidoct is]
+
+== With Spaces and Special Characters
+
+link: https: //support.apple.com/kb/PH23625? locale = en_US & viewlocale = en_US [Special Characters Apple Support]
+
+== Relative
+
+link: Home.asciidoc [Home Page]
+
+Link with attributes
+
+http://discuss.asciidoctor.org [Discuss Asciidoctor, role = "external", window = "_ blank" ^]
+
+== Inline anchors
+
+Inline anchors make content referenceable. [[Bookmark-a]]
+
+== Internal cross references
+
+For external links, please click << External >>.
+
+= 2.REQUENCES [[bookmark-a]]
+
+== Block Picture
+
+image :: octocat.jpg [mascot]
+
+image :: https: //asciidoctor.org/images/octocat.jpg [Github Mascot]
+
+== Inline
+
+To start, click image: https: //d33wubrfki0l68.cloudfront.net/f7fd8f96eddbcbe7c4de8ddf1f094f6659b3df06/bae11/images/icons/play.png [title = "Pause"].
+
+Click image: play.png [title = "Pause"] to start.
+
+== Inline image with positioning role
+
+image: https: //d33wubrfki0l68.cloudfront.net/dbfc383d23401ccbed7262a1822dba9babecb949/69a10/images/sunset.jpg [Sunset, 150,150, role = "right"] Sunset
+
+image: sunset.jpg [Sunset, 150,150, role = "right"] Sunset
+
+= 3.Videos
+
+== Block
+
+
+video :: https: //www.youtube.com/watch? v = w3jLJU7DT5E & frags = pl% 2Cwn [What is Github]
+
+== Embedded Youtube Videos
+
+:: w3jlju7dt5 the video [YouTube]
+
+= 4.Java Code
+
+.calculator.cpp
+[Source, Java]
+----
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+        System.out.println("Hello, World");
+    }
+
+}
+----
+
+== Inline
+
+Reference code like types like.
+
+
+= 5.Linux Bash Script Code
+
+[Source, bash]
+----
+#! / Bin / bash
+# declare STRING variable
+STRING = "Hello World"
+#print variable on a screen
+Echo $ STRING
+----
+
+= 8.Table Example
+
+Table of two columns, a header, and two rows of content
+
+[% Header, cols = 2 *]
+| ===
+| 1st
+| 2nd
+
+Prolab 1
+Prolab 2
+
+Yazlab 1
+| Yazlab 2
+| ===
+
+= 9.WARDS
+
+[WARNING]
+====
+Convert the formats of wiki files from Markdown to Asciidoc in Github.
+====
+
+[WARNING]
+====
+Do not forget to add your collaborators on private accounts.
+====
+
+[WARNING]
+====
+Convert the .md format of the readme file to asciidoc.
+====
+
+= 6. REFERING TO A TITLE ON THE SUBMISSION
+
+[MEDICINE]
+====
+Click << bookmark-a >> to browse the pictures section.
+====
+Geri bildirim gönder
+Geçmiş
+Kaydedilenler
+Topluluk
