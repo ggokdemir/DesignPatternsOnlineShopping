@@ -99,16 +99,6 @@ Table of two columns, a header, and two rows of content
 Convert the formats of wiki files from Markdown to Asciidoc in Github.
 ====
 
-[WARNING]
-====
-Do not forget to add your collaborators on private accounts.
-====
-
-[WARNING]
-====
-Convert the .md format of the readme file to asciidoc.
-====
-
 = 6. REFERING TO A TITLE ON THE SUBMISSION
 
 [TIP]
