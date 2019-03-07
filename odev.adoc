@@ -29,9 +29,9 @@ For external links, please click << External >>.
 
 == Block Picture
 
-image :: picture.jpg [mascot]
+image :: picture.jpg [picture]
 
-image :: https: //asciidoctor.org/images/image.jpg [Github Mascot]
+image :: https: //asciidoctor.org/images/image.jpg [Github Picture]
 
 == Inline
 
@@ -130,6 +130,7 @@ Click << bookmark-a >> to browse the pictures section.
 I just want to add an example pragraph here. Its gonna be an article soon. But not right now.
 
 ==Linux
+
 *Linux is my favorite operating system.
 *Being open source is big plus.
 *You can add and develop new parts to it.
