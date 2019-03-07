@@ -29,9 +29,7 @@ For external links, please click << External >>.
 
 == Block Picture
 
-image :: picture.jpg [picture]
-
-image :: https: //asciidoctor.org/images/image.jpg [Github Picture]
+image::profil_image.jpg [picture]
 
 == Inline
 
@@ -87,9 +85,8 @@ Echo $ STRING
 Table of two columns, a header, and two rows of content
 
 [% Header, cols = 2 *]
+
 | ===
-| 1st
-| 2nd
 
  Programming
  
