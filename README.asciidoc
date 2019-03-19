@@ -165,5 +165,4 @@ The project was initiated in 2019 by https://github.com/gurkangokdemir[Gurkan Go
 *YAPBENZET* was started by Kocaeli University Engineering Faculty Computer Engineering Department and has received contributions from.
 
 ifndef::env-site[]
-== References
 
