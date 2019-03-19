@@ -165,8 +165,5 @@ The project was initiated in 2019 by https://github.com/gurkangokdemir[Gurkan Go
 *YAPBENZET* was started by Kocaeli University Engineering Faculty Computer Engineering Department and has received contributions from.
 
 ifndef::env-site[]
-== 8.References
-* https://stackoverflow.com/questions/35151067/algorithm-to-compare-two-images-in-c-sharp
-* https://stackoverflow.com/questions/1922040/how-to-resize-an-image-c-sharp
+== References
 
-* https://stackoverflow.com/questions/13625891/cut-an-image-into-9-pieces-c-sharp
