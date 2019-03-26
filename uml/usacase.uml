@@ -21,7 +21,6 @@ rectangle online_shopping{
   
   (checkout) .> (payment) : include
   (checkout) .> (calculate price) : include
-  (checkout) -- administrator
   
   (update profile) .>   (login) :extends
   (update quantity) .> (add cart item) : include
