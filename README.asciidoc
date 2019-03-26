@@ -4,6 +4,9 @@
 
 _Gurkan Gokdemir <https://github.com/gurkangokdemir[gurkangokdemir@outlook.com]>_
 
+image::profil_image.jpg[Profil,300,300]
+
+
 == Abstract
 
 _This is a project that contains 4 x 4 blocks YAPBENZET. User can easily upload their picture to the application._
