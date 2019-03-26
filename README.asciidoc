@@ -14,6 +14,19 @@ _This is a project that contains 4 x 4 blocks YAPBENZET. User can easily upload 
 
 Major funding for *YAPBENZET*
  is provided by our *YAPBENZET*, 
+ 
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3 
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+ 
 
 == The Big Picture
 
