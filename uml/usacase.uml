@@ -9,12 +9,25 @@ rectangle online_shopping{
   customer -- (checkout)  
   customer -- (register)  
   customer -- (login)  
-  (update profile) .>   (login) :extends
+  customer -- (update shipping info)
+  customer -- (place order)
+  customer -- (add cart item)
+  customer -- (update quantitiy)
+  customer -- (view cart details)
+
+  
+  (place order) .>   (login) :include
   (login) .> (verify login) : include
+  
   (checkout) .> (payment) : include
-  (help) .> (checkout) : extends
+  (checkout) .> (calculate price) : include
   (checkout) -- administrator
+  
+  (update profile) .>   (login) :extends
+  (update quantity) .> (add cart item) : include
   (update catalog)-- administrator
+  (update shipping info) .> (checkout) : extends
+  (help) .> (checkout) : extends
 
 }
 @enduml
