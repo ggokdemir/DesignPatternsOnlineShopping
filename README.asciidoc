@@ -6,6 +6,7 @@ _Gurkan Gokdemir <https://github.com/gurkangokdemir[gurkangokdemir@outlook.com]>
 
 image::profil_image.jpg[Profil,300,300]
 
+https://github.com/gurkangokdemir[GurkanGokdemir @ *GitHub*]
 
 == Abstract
 
