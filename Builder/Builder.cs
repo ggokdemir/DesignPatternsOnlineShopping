@@ -18,8 +18,18 @@ class Cart{
 class Item{
 +name(): String
 +price(): float
-+packing(): Packing
+}
+
+class Coke{
++price(): float
+}
+class Cake{
++price(): float
 }
 
 CartBuilder <-- CartBuilderPatternDemo: asks
+Cart <-- CartBuilder : builds
+Item <-- Cart : uses
+Item <-- Coke : implements
+Item <-- Cake : implements
 @enduml
