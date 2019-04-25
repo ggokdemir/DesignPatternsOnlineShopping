@@ -1,5 +1,5 @@
 @startuml
-class CustomerDemo{
+class CustomerFactoryPatternDemo{
 +main(): void
 }
 
@@ -7,15 +7,15 @@ class CustomerProducer{
 +getFactory(): CustomerFactory
 }
 
-class CustomerFactory{
-+getCustomerInfo():Info
-}
-
-class InfoFactory{
+abstract class CustomerFactory{
 +getCustomerInfo(): Info
 }
 
-class CustomerInfo{
+abstract class InfoFactory{
++getCustomerInfo(): Info
+}
+
+abstract class CustomerInfo{
 +getName(): String
 +getSurnam(): String
 +getAdress(): String
@@ -24,6 +24,38 @@ class CustomerInfo{
 +getPassword() : String 
 }
 
-CustomerFactory <-- CustomerProducer :uses
-CustomerProducer <-- CustomerDemo :uses
+class OldCustomer{
++getName(): String
++getSurnam(): String
++getAdress(): String
++getId(): String
++getCardId() : String
++getPassword() : String 
+}
+
+class NewCustomer{
++getName(): String
++getSurnam(): String
++getAdress(): String
++getId(): String
++getCardId() : String
++getPassword() : String 
+}
+
+class GoldCustomer{
++getName(): String
++getSurnam(): String
++getAdress(): String
++getId(): String
++getCardId() : String
++getPassword() : String 
+}
+
+CustomerFactory <-- CustomerProducer : uses
+CustomerProducer <-- CustomerFactoryPatternDemo : uses
+CustomerFactory <-- InfoFactory : extends
+CustomerInfo <-- InfoFactory : creates
+CustomerInfo <-- OldCustomer : implements
+CustomerInfo <-- NewCustomer : implements
+CustomerInfo <-- GoldCustomer : implements
 @enduml
