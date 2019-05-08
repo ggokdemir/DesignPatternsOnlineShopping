@@ -8,6 +8,7 @@ abstract class ClientObserver
 ClientObserver <|-- Client1
 ClientObserver <|-- Client2
 ClientObserver <|-- Client3
+ClientObserver <-- Subject :uses
 
 abstract class ClientObserver{
 +discountSubject :  Discount
@@ -15,6 +16,8 @@ update()
 }
 
 class Subject{
+-observers :List<ClientObserver>
+-state :int
 +getState() :int
 +setState() :void
 +attach() :void
