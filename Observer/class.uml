@@ -1,0 +1,15 @@
+class Client1
+class Client2
+class Client3
+class Subject
+abstract class ClientObserver
+
+ClientObserver <|-- Client1
+ClientObserver <|-- Client2
+ClientObserver <|-- Client3
+
+abstract class ClientObserver{
+  update()
+}
+
+@enduml
