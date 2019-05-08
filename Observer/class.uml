@@ -1,3 +1,4 @@
+
 class Client1
 class Client2
 class Client3
@@ -9,7 +10,27 @@ ClientObserver <|-- Client2
 ClientObserver <|-- Client3
 
 abstract class ClientObserver{
-  update()
++discountSubject :  Discount
+update()
+}
+
+class Subject{
++getState() :int
++setState() :void
++attach() :void
++notifyAllObservers() :void
+}
+
+class Client1{
+update()
+}
+
+class Client2{
+update()
+}
+
+class Client3{
+update()
 }
 
 @enduml
