@@ -1,1 +1,19 @@
-Dependency Injection
+using System;
+
+ 
+
+namespace gurkangokdemir
+
+{
+
+ 
+  class MainApp
+
+  {
+
+   
+
+  }
+
+}
+ 
