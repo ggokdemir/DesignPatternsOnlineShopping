@@ -1,232 +1,232 @@
-using System;
+ using System;
 
-using System.Collections.Generic;
+ using System.Collections.Generic;
 
- 
 
-namespace gurkangokdemir
 
-{
+ namespace gurkangokdemir
 
+ {
 
-  class MainApp
 
-  {
+   class MainApp
 
-    static void Main()
+   {
 
-    {
-    
-      ObjectStructure o = new ObjectStructure();
+     static void Main()
 
-      o.Attach(new ConcreteElementA());
+     {
 
-      o.Attach(new ConcreteElementB());
+       ObjectStructure o = new ObjectStructure();
 
- 
+       o.Attach(new ConcreteElementA());
 
-      // Create visitor objects
+       o.Attach(new ConcreteElementB());
 
-      ConcreteVisitor1 v1 = new ConcreteVisitor1();
 
-      ConcreteVisitor2 v2 = new ConcreteVisitor2();
 
- 
-      o.Accept(v1);
+       // Create visitor objects
 
-      o.Accept(v2);
+       ConcreteVisitor1 v1 = new ConcreteVisitor1();
 
+       ConcreteVisitor2 v2 = new ConcreteVisitor2();
 
 
-      Console.ReadKey();
+       o.Accept(v1);
 
-    }
+       o.Accept(v2);
 
-  }
 
 
-  abstract class Visitor
+       Console.ReadKey();
 
-  {
+     }
 
-    public abstract void VisitConcreteElementA(
+   }
 
-      ConcreteElementA concreteElementA);
 
-    public abstract void VisitConcreteElementB(
+   abstract class Visitor
 
-      ConcreteElementB concreteElementB);
+   {
 
-  }
+     public abstract void VisitConcreteElementA(
 
+       ConcreteElementA concreteElementA);
 
-  class ConcreteVisitor1 : Visitor
+     public abstract void VisitConcreteElementB(
 
-  {
+       ConcreteElementB concreteElementB);
 
-    public override void VisitConcreteElementA(
+   }
 
-      ConcreteElementA concreteElementA)
 
-    {
+   class ConcreteVisitor1 : Visitor
 
-      Console.WriteLine("{0} visited by {1}",
+   {
 
-        concreteElementA.GetType().Name, this.GetType().Name);
+     public override void VisitConcreteElementA(
 
-    }
+       ConcreteElementA concreteElementA)
 
- 
+     {
 
-    public override void VisitConcreteElementB(
+       Console.WriteLine("{0} visited by {1}",
 
-      ConcreteElementB concreteElementB)
+         concreteElementA.GetType().Name, this.GetType().Name);
 
-    {
+     }
 
-      Console.WriteLine("{0} visited by {1}",
 
-        concreteElementB.GetType().Name, this.GetType().Name);
 
-    }
+     public override void VisitConcreteElementB(
 
-  }
+       ConcreteElementB concreteElementB)
 
+     {
 
-  class ConcreteVisitor2 : Visitor
+       Console.WriteLine("{0} visited by {1}",
 
-  {
+         concreteElementB.GetType().Name, this.GetType().Name);
 
-    public override void VisitConcreteElementA(
+     }
 
-      ConcreteElementA concreteElementA)
+   }
 
-    {
 
-      Console.WriteLine("{0} visited by {1}",
+   class ConcreteVisitor2 : Visitor
 
-        concreteElementA.GetType().Name, this.GetType().Name);
+   {
 
-    }
+     public override void VisitConcreteElementA(
 
- 
+       ConcreteElementA concreteElementA)
 
-    public override void VisitConcreteElementB(
+     {
 
-      ConcreteElementB concreteElementB)
+       Console.WriteLine("{0} visited by {1}",
 
-    {
+         concreteElementA.GetType().Name, this.GetType().Name);
 
-      Console.WriteLine("{0} visited by {1}",
+     }
 
-        concreteElementB.GetType().Name, this.GetType().Name);
 
-    }
 
-  }
+     public override void VisitConcreteElementB(
 
+       ConcreteElementB concreteElementB)
 
-  abstract class Element
+     {
 
-  {
+       Console.WriteLine("{0} visited by {1}",
 
-    public abstract void Accept(Visitor visitor);
+         concreteElementB.GetType().Name, this.GetType().Name);
 
-  }
+     }
 
- 
-  class ConcreteElementA : Element
+   }
 
-  {
 
-    public override void Accept(Visitor visitor)
+   abstract class Element
 
-    {
+   {
 
-      visitor.VisitConcreteElementA(this);
+     public abstract void Accept(Visitor visitor);
 
-    }
+   }
 
- 
 
-    public void OperationA()
+   class ConcreteElementA : Element
 
-    {
+   {
 
-    }
+     public override void Accept(Visitor visitor)
 
-  }
+     {
 
- 
+       visitor.VisitConcreteElementA(this);
 
+     }
 
-  class ConcreteElementB : Element
 
-  {
 
-    public override void Accept(Visitor visitor)
+     public void OperationA()
 
-    {
+     {
 
-      visitor.VisitConcreteElementB(this);
+     }
 
-    }
+   }
 
- 
 
-    public void OperationB()
 
-    {
 
-    }
+   class ConcreteElementB : Element
 
-  }
+   {
 
- 
+     public override void Accept(Visitor visitor)
 
-  class ObjectStructure
+     {
 
-  {
+       visitor.VisitConcreteElementB(this);
 
-    private List<Element> _elements = new List<Element>();
+     }
 
- 
 
-    public void Attach(Element element)
 
-    {
+     public void OperationB()
 
-      _elements.Add(element);
+     {
 
-    }
+     }
 
- 
+   }
 
-    public void Detach(Element element)
 
-    {
 
-      _elements.Remove(element);
+   class ObjectStructure
 
-    }
+   {
 
- 
+     private List<Element> _elements = new List<Element>();
 
-    public void Accept(Visitor visitor)
 
-    {
 
-      foreach (Element element in _elements)
+     public void Attach(Element element)
 
-      {
+     {
 
-        element.Accept(visitor);
+       _elements.Add(element);
 
-      }
+     }
 
-    }
 
-  }
 
-}
+     public void Detach(Element element)
+
+     {
+
+       _elements.Remove(element);
+
+     }
+
+
+
+     public void Accept(Visitor visitor)
+
+     {
+
+       foreach (Element element in _elements)
+
+       {
+
+         element.Accept(visitor);
+
+       }
+
+     }
+
+   }
+
+ }
  
