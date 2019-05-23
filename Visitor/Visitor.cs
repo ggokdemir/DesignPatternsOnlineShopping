@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
  
 
-namespace DoFactory.GangOfFour.Visitor.Structural
+namespace gurkangokdemir
 
 {
 
