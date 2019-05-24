@@ -1,232 +1,151 @@
- using System;
+namespace gurkangokdemir
+{
+    interface IVisitor
+    {
+        public double Visit(GoldCustomer goldCustItem);
+        public double Visit(StandardCustomer standardCustItem);
+        public double Visit(NewCustomer newCustItem);
+    }
+
+    interface IVisitable
+    {
+        public double Accept(IVisitor visitor);
+    }
+
+    class DiscountVisitor : IVisitor
+    {
+        public DiscountVisitor()
+        {
+
+        }
+
+        public double Visit(GoldCustomer goldCustItem)
+        {
+            Console.WriteLine("GoldCustomer's total cost including discount.");
+            return goldCustItem.GetTotalCost() - (goldCustItem.GetTotalCost() * 30);
+        }
+        public double Visit(StandardCustomer standartCustItem)
+        {
+            Console.WriteLine("StandartCustomer's total cost including discount.");
+            return standardCustItem.GetTotalCost() - (standardCustItem.GetTotalCost() * 10);
+        }
+        public double Visit(NewCustomer newCustItem)
+        {
+            Console.WriteLine("NewCustomer's total cost including discount.");
+            return newCustItem.GetTotalCost() - (newCustItem.GetTotalCost() * 20);
+        }
+    }
+
+    class BlackFridayDiscountVisitor : IVisitor
+    {
+        public BlackFridayDiscountVisitor()
+        {
+
+        }
+
+        public double Visit(GoldCustomer goldCustItem)
+        {
+            Console.WriteLine("GoldCustomer's total cost including BlackFriday discount.");
+            return goldCustItem.GetTotalCost() - (goldCustItem.GetTotalCost() * 50);
+        }
+        public double Visit(StandardCustomer standartCustItem)
+        {
+            Console.WriteLine("StandartCustomer's total cost including BlackFriday discount.");
+            return standardCustItem.GetTotalCost() - (standardCustItem.GetTotalCost() * 25);
+        }
+        public double Visit(NewCustomer newCustItem)
+        {
+            Console.WriteLine("NewCustomer's total cost including BlackFriday discount.");
+            return newCustItem.GetTotalCost() - (newCustItem.GetTotalCost() * 35);
+        }
+    }
+
+
+    class GoldCustomer : IVisitable
+    {
+        private double price;
+
+        GoldCustomer(double price)
+        {
+            this.price = price;
+        }
+
+        public double GetTotalCost()
+        {
+            return this.price;
+        }
+
+        public double Accept(IVisitor visitor)
+        {
+            return visitor.Visit(this);
+        }
+    }
+
+    class StandardCustomer : IVisitable
+    {
+        private double price;
+
+        StandardCustomer(double price)
+        {
+            this.price = price;
+        }
+
+        public double GetTotalCost()
+        {
+            return this.price;
+        }
+
+        public double Accept(IVisitor visitor)
+        {
+            return visitor.Visit(this);
+        }
+    }
 
- using System.Collections.Generic;
+    class NewCustomer : IVisitable
+    {
+        private double price;
 
+        NewCustomer(double price)
+        {
+            this.price = price;
+        }
 
+        public double GetTotalCost()
+        {
+            return this.price;
+        }
 
- namespace gurkangokdemir
+        public double Accept(IVisitor visitor)
+        {
+            return visitor.Visit(this);
+        }
+    }
 
- {
+    class VisitorPattern
 
+    {
 
-   class MainApp
+        public static void Main()
 
-   {
+        {
 
-     static void Main()
+            DiscountVisitor discountVisitor = new DiscountVisitor();
+            BlackFridayDiscountVisitor blackFridayDiscountVisitor = new BlackFridayDiscountVisitor();
 
-     {
+            GoldCustomer goldCustItem1 = new GoldCustomer(120.00);
+            StandardCustomer standardCustItem1 = new StandardCustomer(120.00);
+            NewCustomer newCustItem1 = new NewCustomer(120.00);
 
-       ObjectStructure o = new ObjectStructure();
+            Console.WriteLine(goldCustItem1.Accept(discountVisitor));
+            Console.WriteLine(standardCustItem1.Accept(discountVisitor));
+            Console.WriteLine(newCustItem1.Accept(discountVisitor));
 
-       o.Attach(new ConcreteElementA());
+            Console.WriteLine(goldCustItem1.Accept(blackFridayDiscountVisitor));
+            Console.WriteLine(standardCustItem1.Accept(blackFridayDiscountVisitor));
+            Console.WriteLine(newCustItem1.Accept(blackFridayDiscountVisitor));
 
-       o.Attach(new ConcreteElementB());
+        }
+    }
 
+}
 
-
-       // Create visitor objects
-
-       ConcreteVisitor1 v1 = new ConcreteVisitor1();
-
-       ConcreteVisitor2 v2 = new ConcreteVisitor2();
-
-
-       o.Accept(v1);
-
-       o.Accept(v2);
-
-
-
-       Console.ReadKey();
-
-     }
-
-   }
-
-
-   abstract class Visitor
-
-   {
-
-     public abstract void VisitConcreteElementA(
-
-       ConcreteElementA concreteElementA);
-
-     public abstract void VisitConcreteElementB(
-
-       ConcreteElementB concreteElementB);
-
-   }
-
-
-   class ConcreteVisitor1 : Visitor
-
-   {
-
-     public override void VisitConcreteElementA(
-
-       ConcreteElementA concreteElementA)
-
-     {
-
-       Console.WriteLine("{0} visited by {1}",
-
-         concreteElementA.GetType().Name, this.GetType().Name);
-
-     }
-
-
-
-     public override void VisitConcreteElementB(
-
-       ConcreteElementB concreteElementB)
-
-     {
-
-       Console.WriteLine("{0} visited by {1}",
-
-         concreteElementB.GetType().Name, this.GetType().Name);
-
-     }
-
-   }
-
-
-   class ConcreteVisitor2 : Visitor
-
-   {
-
-     public override void VisitConcreteElementA(
-
-       ConcreteElementA concreteElementA)
-
-     {
-
-       Console.WriteLine("{0} visited by {1}",
-
-         concreteElementA.GetType().Name, this.GetType().Name);
-
-     }
-
-
-
-     public override void VisitConcreteElementB(
-
-       ConcreteElementB concreteElementB)
-
-     {
-
-       Console.WriteLine("{0} visited by {1}",
-
-         concreteElementB.GetType().Name, this.GetType().Name);
-
-     }
-
-   }
-
-
-   abstract class Element
-
-   {
-
-     public abstract void Accept(Visitor visitor);
-
-   }
-
-
-   class ConcreteElementA : Element
-
-   {
-
-     public override void Accept(Visitor visitor)
-
-     {
-
-       visitor.VisitConcreteElementA(this);
-
-     }
-
-
-
-     public void OperationA()
-
-     {
-
-     }
-
-   }
-
-
-
-
-   class ConcreteElementB : Element
-
-   {
-
-     public override void Accept(Visitor visitor)
-
-     {
-
-       visitor.VisitConcreteElementB(this);
-
-     }
-
-
-
-     public void OperationB()
-
-     {
-
-     }
-
-   }
-
-
-
-   class ObjectStructure
-
-   {
-
-     private List<Element> _elements = new List<Element>();
-
-
-
-     public void Attach(Element element)
-
-     {
-
-       _elements.Add(element);
-
-     }
-
-
-
-     public void Detach(Element element)
-
-     {
-
-       _elements.Remove(element);
-
-     }
-
-
-
-     public void Accept(Visitor visitor)
-
-     {
-
-       foreach (Element element in _elements)
-
-       {
-
-         element.Accept(visitor);
-
-       }
-
-     }
-
-   }
-
- }
- 
