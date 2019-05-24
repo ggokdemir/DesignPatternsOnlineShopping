@@ -1,0 +1,24 @@
+@startuml
+
+class Memento{
+-string shoppingCart
++Memento(string shoppingCart)
++string getSavedShoppingCart()
+}
+
+class Orginator {
+-string shoppingCart
++void Set(string newShoppingCart)
++Memento StoreInMemento()
++string RestoreFromMemento(Memento memento)
+}
+
+class CareTaker {
+-List<Memento> savedShoppingCarts
++void addMemento(Memento memento)
++Memento getMemento(int index)
+}
+
+
+
+@enduml
