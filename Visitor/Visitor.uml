@@ -1,0 +1,53 @@
+@startuml
+interface IVisitor{
++double Visit(GoldCustomer goldCustItem)
++double Visit(StandardCustomer standardCustItem)
++double Visit(NewCustomer newCustItem)
+}
+
+interface IVisitable{
++double Accept(IVisitor visitor)
+}
+
+class DiscountVisitor{
++public DiscountVisitor()
++double Visit(GoldCustomer goldCustItem)
++double Visit(StandardCustomer standartCustItem)
++double Visit(NewCustomer newCustItem)
+}
+
+class BlackFridayDiscountVisitor {
++public BlackFridayDiscountVisitor ()
++double Visit(GoldCustomer goldCustItem)
++double Visit(StandardCustomer standartCustItem)
++double Visit(NewCustomer newCustItem)
+}
+
+class GoldCustomer {
+-double price
++GoldCustomer(double price)
++double GetTotalCost()
++double Accept(IVisitor visitor)
+}
+
+class StandardCustomer {
+-double price
++StandardCustomer(double price)
++double GetTotalCost()
++double Accept(IVisitor visitor)
+}
+
+class NewCustomer {
+-double price
++NewCustomer(double price)
++double GetTotalCost()
++double Accept(IVisitor visitor)
+}
+
+
+IVisitable<-- GoldCustomer : implements
+IVisitable<-- StandardCustomer : implements
+IVisitable<-- NewCustomer : implements
+IVisitor<-- DiscountVisitor : implements
+IVisitor<-- BlackFridayDiscountVisitor : implements
+@enduml
