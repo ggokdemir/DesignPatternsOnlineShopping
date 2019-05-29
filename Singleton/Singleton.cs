@@ -1,75 +1,34 @@
-                 
-
 using System;
 
- 
-
-namespace gurkangokdemir
+namespace OnlineShoppingCenter
 {
-
-  class MainApp
-
-  {
-
-    static void Main()
-
+    public class SiteAdminSingleton
     {
+        private static int _adminId;
+        private static SiteAdminSingleton _instance;
+        protected SiteAdminSingleton(int adminId)
+        {
+            _adminId = adminId;
+        }
 
-      Singleton s1 = Singleton.Instance();
+        public static SiteAdminSingleton getInstance(int adminId)
+        {
+            {
 
-      Singleton s2 = Singleton.Instance();
+                if (_instance == null)
 
-      if (s1 == s2)
+                {
 
-      {
+                    _instance = new SiteAdminSingleton(adminId);
 
-        Console.WriteLine("Objects are the same instance");
+                }
 
-      }
 
-      Console.ReadKey();
 
+                return _instance;
+
+            }
+        }
     }
-
-  }
-
-
-
-  class Singleton
-
-  {
-
-    private static Singleton _instance;
-
-
-
-    protected Singleton()
-
-    {
-
-    }
-
- 
-
-    public static Singleton Instance()
-
-    {
-
-      if (_instance == null)
-
-      {
-
-        _instance = new Singleton();
-
-      }
-
- 
-
-      return _instance;
-
-    }
-
-  }
 
 }
- 
