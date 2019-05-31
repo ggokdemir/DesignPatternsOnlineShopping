@@ -1,0 +1,22 @@
+@startuml
+
+class CallCenter{
+-static _PoolMaxSize : int 
+-static readonly objPool : Queue 
++GetCallCenterEmployee() : CallCenterEmployee 
++GetNewCallCenterEmployee() : CallCenterEmployee 
+-RetrieveFromPool() : CallCenterEmployee 
+}
+
+class CallCenterEmployee{
++static Counter : int 
++CallCenterEmployee()
+-_Firstname : string 
++Firstname : string 
+-_Lastname : string 
++Lastname : string 
+-_Title : string 
++Title : string 
+}
+
+@enduml
