@@ -1,0 +1,54 @@
+@startuml
+
+interface IAbstractFactory{
++DesktopPC() : IAbstractDesktopPC 
++NotebookPC() : IAbstractNotebookPC 
+}
+
+IAbstractFactory <|-- GamingFactory
+
+class GamingFactory{
++DesktopPC() : IAbstractDesktopPC 
++NotebookPC() : IAbstractNotebookPC 
+}
+
+IAbstractFactory <|-- WorkstationFactory
+
+class WorkstationFactory{
++DesktopPC() : IAbstractDesktopPC 
++NotebookPC() : IAbstractNotebookPC 
+}
+
+interface IAbstractDesktopPC{
+SetConfigurationsDesktopPC() : string 
+}
+
+IAbstractDesktopPC <|-- GamingDesktop
+
+class GamingDesktop{
++SetConfigurationsDesktopPC() : string 
+}
+
+IAbstractDesktopPC <|-- WorkstationDesktop
+
+class WorkstationDesktop{
++SetConfigurationsDesktopPC() : string 
+}
+
+interface IAbstractNotebookPC{
++SetConfigurationsNotebookPC() : string 
+}
+
+IAbstractNotebookPC <|-- GamingNotebook
+
+class GamingNotebook{
++SetConfigurationsNotebookPC() : string 
+}
+
+
+IAbstractNotebookPC <|-- WorkstationNotebook
+
+class WorkstationNotebook{
++SetConfigurationsNotebookPC() : string 
+}
+@enduml
