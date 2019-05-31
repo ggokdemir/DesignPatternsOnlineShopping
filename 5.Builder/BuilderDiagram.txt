@@ -1,0 +1,34 @@
+@startuml
+
+interface IBuilder{
+Discount10per() : void 
+Discount20per() : void 
+Discount50per() : void 
+}
+
+IBuilder <|-- ConcreteBuilder
+
+class ConcreteBuilder{
+-_pmembership : Pmembership 
++ConcreteBuilder()
++Reset() : void 
++Discount10per() : void 
++Discount20per() : void 
++Discount50per() : void 
++GetPmembership() : Pmembership 
+}
+
+class Pmembership{
+-_parts : List<object> 
++Add(string part) : void 
++ListParts() : string 
+}
+
+class Director{
+-_builder : IBuilder 
++Builder : IBuilder 
++buildMinimalViablePmembership() : void 
++buildFullFeaturedPmembership() : void 
+}
+
+@enduml
