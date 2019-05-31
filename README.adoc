@@ -78,7 +78,7 @@ image::5.Builder/image.png[image]
 %50 discount on fourth product.
 
 
-*1. Abstract Factory Pattern*
+*6. Abstract Factory Pattern*
 
 image::6.AbstractFactory/image.png[image]
 
@@ -93,91 +93,37 @@ It could be hard for us to add and remove.
 
 image::7.Iterator/image.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
-
-* Best operating system for servers.
-* Open source.
-* Stable
-
-----
- Goal 1
- Goal 2
-----
+* Our lucky customers can get some coupons.
+* This pattern used for sorting lucky users. 
 
 *8. Observer Pattern*
 
 image::8.Observer/image.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
+* We sometimes have some discounts for some special products.
+* And clients wants to get notified about specific products.
 
-* Best operating system for servers.
-* Open source.
-* Stable
-
-----
- Goal 1
- Goal 2
-----
 
 *9. Memento Pattern*
 
 image::9.Memento/image.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
-
-* Best operating system for servers.
-* Open source.
-* Stable
-
-----
- Goal 1
- Goal 2
-----
+* There is a shopping card for extra discounts and free products.
+* Users sometimes wants to change their cards. But new cards doesnt contains information about old purchases.
+* When customer wants old details. We use this pattern.
 
 *10. Command Pattern*
 
 image::10.Command/image.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
-
-* Best operating system for servers.
-* Open source.
-* Stable
-
-----
- Goal 1
- Goal 2
-----
+* This pattern used for secure purchases.
 
 *11. Adapter Pattern*
 
 image::11.Adapter/image.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
 
-* Best operating system for servers.
-* Open source.
-* Stable
-
-----
- Goal 1
- Goal 2
-----
+* Our customers have accounts on the other shopping sites. We provide them to easy integration between sites.
 
 
 
