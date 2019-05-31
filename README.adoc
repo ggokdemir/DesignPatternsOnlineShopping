@@ -22,7 +22,7 @@ I'm editting this text as an editor but I'm not sure to share.
 
 *Class Diagram*
 
-image::DIAGRAM/class.png[image]
+image::DIAGRAMS/class.png[image]
 
 [NOTE]
 ====
