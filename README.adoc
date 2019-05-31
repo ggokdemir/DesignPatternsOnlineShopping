@@ -5,19 +5,25 @@
 *Project Uml*
 
 image::DIAGRAMS/use-case-v2.png[image]
+* Use case diagram contains all project details.
 
 [NOTE]
 ====
 This project created in VS CODE environment with dotnet core 2.1
 ====
 
+----
+dotnet run
+----
+
 [NOTE]
 ====
-All patterns with the Strategy pattern. 
+Program.cs uses PatternStrategy(Strategy Pattern)
 ====
 
 * It was an easy solution.
 * I also wanted to use strategy pattern too.
+* So I decided to use it.
 
 ----
 Project goal is to create an interactive Online Shopping System.
@@ -31,6 +37,7 @@ image::DIAGRAMS/class.png[image]
 
 * This is the diagram of the project.
 * All necessary classes are exist.
+* It's a basic Online Shopping System.
 
 
 *1. Singleton Pattern*
@@ -38,7 +45,8 @@ image::DIAGRAMS/class.png[image]
 image::1.Singleton/image.png[image]
 
 
-* i use this pattern to have only one admin on the system.
+* I use this pattern to have only one admin on the system.
+* It checks if there is an admin exist. If not. Creates one.
 
 
 *2. Factory Pattern*
@@ -46,8 +54,8 @@ image::1.Singleton/image.png[image]
 image::2.Factory/image.png[image]
 
 
-* Site has two versions. One in web browser and one in the app store.
-* There platforms have same responsibilityl. So i used factory pattert to easily configure it.
+* Site has two versions. One in web and one in mobile.
+* These platforms have same responsiblity. So i used factory pattern to easily configure it.
 
 *3. Prototype Pattern*
 
@@ -55,6 +63,8 @@ image::3.Prototype/image.png[image]
 
 
 * In this scenario user wants to create new account with same credit card. 
+* If card is deep copied, user can change every details on new card.
+* If not, IdInfo and CardInfo classes content is not going to change.
 
 *4. Object Pool Pattern*
 
@@ -63,7 +73,8 @@ image::4.ObjectPool/image.png[image]
 
 * Our clients could have problems about their purchase. So we have a call center system.
 * But as like all companies. We have limitted employee for clients.
-* Object pool pattern solved this problem.
+* If an employee is free. We dont need to hire another.
+* Object pool pattern organizes and solves this problem.
 
 
 *5. Builder Pattern*
@@ -76,6 +87,7 @@ image::5.Builder/image.png[image]
 * With Minimal membership customer can have 10 percent discount on every second product.
 * In other case, with FullFeatured membership customer can get %10 discount on second, %20 discount on third
 %50 discount on fourth product.
+* Builder contains different steps for different needs. Director control that steps. So we can easily add new membership plan.
 
 
 *6. Abstract Factory Pattern*
@@ -83,11 +95,11 @@ image::5.Builder/image.png[image]
 image::6.AbstractFactory/image.png[image]
 
 
-* We have technology store on our shopping site, there are high performance computers.
+* We have tech store on our shopping site, there are high performance computers.
 * Customer can choose their computer as desktop or notebook.
 * Also we have two type of computers one is Gaming other is Workstation.
 * Without abstract factory pattern there could be multiple classes. And if we wanted to change some configuration.
-It could be hard for us to add and remove.
+It could be hard for us to add and remove without abstract factory.
 
 *7. Iterator Pattern*
 
