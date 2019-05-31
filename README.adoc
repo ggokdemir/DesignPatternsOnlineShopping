@@ -2,7 +2,7 @@
 == Design Patterns
 === Gurkan Gokdemir 140202038 (github.com/gurkangokdemir)
 
-*1. Singleton Pattern Scenario*
+*1. Singleton Pattern*
 
 image::1.Singleton/image.png[image]
 
@@ -19,4 +19,186 @@ I'm editting this text as an editor but I'm not sure to share.
  Goal 1
  Goal 2
 ----
+
+*2. Factory Pattern*
+
+image::2.Factory/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*3. Prototype Pattern*
+
+image::3.Prototype/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*4. Object Pool Pattern*
+
+image::4.ObjectPool/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*5. Builder Pattern*
+
+image::5.Builder/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*1. Abstract Factory Pattern*
+
+image::6.AbstractFactory/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*7. Iterator Pattern*
+
+image::7.Iterator/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*8. Observer Pattern*
+
+image::8.Observer/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*9. Memento Pattern*
+
+image::9.Memento/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*10. Command Pattern*
+
+image::10.Command/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+*11. Adapter Pattern*
+
+image::11.Adapter/image.png[image]
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+* Best operating system for servers.
+* Open source.
+* Stable
+
+----
+ Goal 1
+ Goal 2
+----
+
+
 
