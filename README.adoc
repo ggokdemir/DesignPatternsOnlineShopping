@@ -6,12 +6,6 @@
 
 image::1.Singleton/image.png[image]
 
-= Gurkan Gokdemir's First Edit
-Gurkan Gokdemir; 
-v1.0.0, 2019-03-04
-:description: This guide is a quick reference for the programmer.
-:keywords: gurkan, gokdemir
-
 
 [NOTE]
 ====
@@ -29,25 +23,10 @@ See these sections in the document User Manual for more information and examples
 * Stable
 ****
 
-
-== Document Header
-
 IMPORTANT: A header is optional.
-
-CAUTION: The header may not contain blank lines and must be offset from the content by at least one blank line.
-
 
 `sectanchors`::
 When this document attribute is set, a section icon anchor appears in front of the section title.
-
-
-NOTE: Section title anchors depend on the default Asciidoctor stylesheet to render properly.
-
-== Images
-
-Images are resolved relative to the value of the {uri-imagesdir}[imagesdir] document attribute, which is empty by default.
-You are encouraged to make use of the `imagesdir` attribute to avoid hard-coding the common path to your images in every image macro.
-
 
 .Traditional (longhand) markup method for assigning block id and role
 ----
@@ -64,12 +43,9 @@ You are encouraged to make use of the `imagesdir` attribute to avoid hard-coding
 ====
 
 
-== Comments
 
 .Line
 ----
 include::{includedir}/ex-comment.adoc[tag=line]
 ----
-
-TIP: Single-line comments can be used to divide elements, such as two adjacent lists.
 
