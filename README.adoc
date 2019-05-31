@@ -146,6 +146,6 @@ image::11.Adapter/image.png[image]
 * Our customers have accounts on the other shopping sites. We provide them to easy integration between sites with adapter.
 
 
-
+author:gurkangokdemir
 
 
