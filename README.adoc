@@ -1,0 +1,75 @@
+=== Online Shopping Center 
+== Design Patterns
+= Gurkan Gokdemir 140202038 (github.com/gurkangokdemir)
+
+*1. Singleton Pattern Scenario*
+
+image::profil_image.jpg[Profil,300,300]
+
+= Gurkan Gokdemir's First Edit
+Gurkan Gokdemir; 
+v1.0.0, 2019-03-04
+:description: This guide is a quick reference for the programmer.
+:keywords: gurkan, gokdemir
+
+
+[NOTE]
+====
+I'm editting this text as an editor but I'm not sure to share.
+====
+
+toc::[]
+
+.Linux 
+****
+See these sections in the document User Manual for more information and examples.
+
+* Best operating system for servers.
+* Open source.
+* Stable
+****
+
+
+== Document Header
+
+IMPORTANT: A header is optional.
+
+CAUTION: The header may not contain blank lines and must be offset from the content by at least one blank line.
+
+
+`sectanchors`::
+When this document attribute is set, a section icon anchor appears in front of the section title.
+
+
+NOTE: Section title anchors depend on the default Asciidoctor stylesheet to render properly.
+
+== Images
+
+Images are resolved relative to the value of the {uri-imagesdir}[imagesdir] document attribute, which is empty by default.
+You are encouraged to make use of the `imagesdir` attribute to avoid hard-coding the common path to your images in every image macro.
+
+
+.Traditional (longhand) markup method for assigning block id and role
+----
+[[goals]]
+[role="incremental"]
+* Goal 1
+* Goal 2
+----
+
+[TIP]
+====
+* To specify multiple roles using the shorthand syntax, separate them by dots.
+* The order of `id` and `role` values in the shorthand syntax does not matter.
+====
+
+
+== Comments
+
+.Line
+----
+include::{includedir}/ex-comment.adoc[tag=line]
+----
+
+TIP: Single-line comments can be used to divide elements, such as two adjacent lists.
+

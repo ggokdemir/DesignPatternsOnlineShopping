@@ -1,0 +1,75 @@
+@startuml
+Shopping_Cart "0..*" --* "1" Customer
+Order "0..*" --* "1" Customer
+Shipping_Info "1" --* "1" Order
+Order_Details "1*" --* "1" Order
+Customer -|> User
+Administrator -|> User
+
+class User{
+  -userId: string
+  -password: string
+  -loginStatus: string
+  -registerDate: date
+  +verifyLogin(): bool
+}
+
+class Administrator{
+  -adminName: string
+  -email: string
+  +updateCatalog(): bool
+}
+
+class Customer{
+  -customerName: string
+  -email: string
+  -adress: string
+  -creditCartInfo: string
+  -shoppingInfo: string
+  -accountBalance: float
+  +register()
+  +login()
+  +updateProfile()
+}
+
+class Shopping_Cart{
+  -cardId: int
+  -productId: int
+  -quantity: int
+  -dateAdded: int
+  +addCartItem()
+  +updateQuantity()
+  +viewCardDetails()
+  +checkOut()
+}
+
+class Order{
+  -orderId: int
+  -dateCreated: string
+  -dateShipped: string
+  -customerName: string
+  -customerId: string
+  -status: string
+  -shippingId: string
+  +placeOrder()
+}
+
+class Shipping_Info{
+  -shippingId: int
+  -shippingType: string
+  -shippingCost: int
+  -shippingRegionId: int
+  +updateShippingInfo()
+}
+
+class Order_Details{
+  -orderId: int
+  -productId: int
+  -productName: string
+  -quantity: int
+  -unitCost: float
+  -subTotal: float
+  +calcPrice()
+}
+
+@enduml

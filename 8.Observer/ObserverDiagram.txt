@@ -1,0 +1,35 @@
+@startuml
+
+interface IObserver{
++Update(ISubject subject) : void
+}
+
+interface ISubject{
++Attach(IObserver observer) : void
++Detach(IObserver observer) : void
++Notify() :void
+
+}
+
+class NewProductSubject{
+-_observers : List<IObserver> 
++ Discount: int
++Attach(IObserver observer) : void 
++Detach(IObserver observer) : void 
++Notify(): void 
+}
+
+ISubject <|-- NewProductSubject 
+IObserver <|-- Customer1 
+IObserver <|-- Customer2 
+
+class Customer1{
++Update(ISubject subject) : void 
+}
+
+class Customer2{
++Update(ISubject subject) : void 
+}
+
+
+@enduml

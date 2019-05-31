@@ -1,0 +1,11 @@
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\bin\Debug\netcoreapp2.1\OnlineShoppingCenter.deps.json
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\bin\Debug\netcoreapp2.1\OnlineShoppingCenter.runtimeconfig.json
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\bin\Debug\netcoreapp2.1\OnlineShoppingCenter.runtimeconfig.dev.json
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\bin\Debug\netcoreapp2.1\OnlineShoppingCenter.dll
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\bin\Debug\netcoreapp2.1\OnlineShoppingCenter.pdb
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\obj\Debug\netcoreapp2.1\OnlineShoppingCenter.csprojAssemblyReference.cache
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\obj\Debug\netcoreapp2.1\OnlineShoppingCenter.csproj.CoreCompileInputs.cache
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\obj\Debug\netcoreapp2.1\OnlineShoppingCenter.AssemblyInfoInputs.cache
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\obj\Debug\netcoreapp2.1\OnlineShoppingCenter.AssemblyInfo.cs
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\obj\Debug\netcoreapp2.1\OnlineShoppingCenter.dll
+C:\Users\Kan\Desktop\Design Patterns\YAPBENZET\OnlineShoppingCenter\obj\Debug\netcoreapp2.1\OnlineShoppingCenter.pdb

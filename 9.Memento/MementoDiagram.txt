@@ -1,0 +1,37 @@
+@startuml
+
+class Originator{
+-string _ShoppingCardID;
++Originator(string ShoppingCardID)
++CreateNewCardID(): void 
+-GenerateRandomString(int length = 10) : string 
++IShoppingCard Save()
++Restore(IShoppingCard ShoppingCard) : void 
+}
+
+interface IShoppingCard{
++GetID() : string 
++GetShoppingCardID() : string 
++GetDate() : DateTime 
+}
+IShoppingCard <|-- ConcreteShoppingCard 
+
+class ConcreteShoppingCard{
+-_ShoppingCardID : string 
+-_date : DateTime 
++ConcreteShoppingCard(string ShoppingCardID)
++GetShoppingCardID() : string 
++GetID() : string 
++GetDate() : DateTime 
+}
+
+class Caretaker{
+-savedShoppingCards : List<IShoppingCard> 
+-_originator = null : Originator 
++Caretaker(Originator originator)
++Backup() : void 
++Undo() : void 
++ShowHistory() : void 
+
+}
+@enduml
