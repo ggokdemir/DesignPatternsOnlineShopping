@@ -1,0 +1,19 @@
+using System;
+
+namespace OnlineShoppingCenter
+{
+    class ObjectPoolProgram
+    {
+        static void Main(string[] args)
+        {
+
+            CallCenter cs = new CallCenter();
+            CallCenterEmployee myEmp1 = cs.GetCallCenterEmployee();
+            Console.WriteLine("First employee");
+            CallCenterEmployee myEmp2 = cs.GetCallCenterEmployee();
+            Console.WriteLine("Second employee");
+
+
+        }
+    }
+}
