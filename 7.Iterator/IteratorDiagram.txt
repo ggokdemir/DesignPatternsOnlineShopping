@@ -1,0 +1,46 @@
+@startuml
+
+
+IEnumerator <|-- Iterator
+
+abstract class Iterator{
++IEnumerator.Current : object 
++abstract Key() : int 
++abstract Current() : object 
++abstract MoveNext() : bool 
++abstract Reset() : void 
+}
+
+IEnumerable <|-- IteratorAggregate 
+
+abstract class IteratorAggregate {
++abstract GetEnumerator() : IEnumerator 
+}
+
+
+Iterator  <|-- AlphabeticalOrderIterator
+
+class AlphabeticalOrderIterator{
+-_customerCollection : LuckyCustomers 
+-_customerPosition : int 
+-_reverse = false : bool 
++AlphabeticalOrderIterator(LuckyCustomers customerCollection, bool reverse = false)
++override Current() : object 
++override Key() : int 
++override MoveNext() : bool 
++override Reset() : void 
+
+}
+
+IteratorAggregate  <|-- LuckyCustomers
+
+class LuckyCustomers{
++ _customerCollection : List<string>
++_direction = false : bool 
++ReverseDirection() : void 
++ getItems() : List<string>
++AddItem(string customer) : void 
++override GetEnumerator() : IEnumerator 
+}
+
+@enduml
