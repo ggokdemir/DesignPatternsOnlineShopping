@@ -1,0 +1,27 @@
+@startuml
+
+interface ICommand{
+Execute() : void 
+}
+
+ICommand <|-- TotalCost
+class TotalCost{
+-_payload : int 
++TotalCost(int payload)
++Execute() : void 
+}
+
+ICommand <|-- PurchaseInfo
+class PurchaseInfo{
+-_infoReceiver : InfoReceiver 
+-_userInfo : string 
+-_cardInfo : string 
++PurchaseInfo(InfoReceiver infoReceiver, string userInfo, string cardInfo)
++Execute() : void 
+}
+
+class InfoReceiver{
++CheckUserInfo(string userInfo) : void 
++CheckCardInfo(string cardInfo) : void 
+}
+@enduml
