@@ -8,30 +8,30 @@ image::DIAGRAMS/use-case-v2.png[image]
 
 [NOTE]
 ====
-I'm editting this text as an editor but I'm not sure to share.
+This project created in VS CODE environment with dotnet core 2.1
 ====
 
-* Best operating system for servers.
-* Open source.
-* Stable
+[NOTE]
+====
+All patterns with the Strategy pattern. 
+====
+
+* It was an easy solution.
+* I also wanted to use strategy pattern too.
 
 ----
- Goal 1
- Goal 2
+Project goal is to create an interactive Online Shopping System.
 ----
 
 *Class Diagram*
 
 image::DIAGRAMS/class.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
 
-* Best operating system for servers.
-* Open source.
-* Stable
+
+* This is the diagram of the project.
+* All necessary classes are exist.
+
 
 ----
  Goal 1
@@ -43,19 +43,9 @@ I'm editting this text as an editor but I'm not sure to share.
 
 image::1.Singleton/image.png[image]
 
-[NOTE]
-====
-I'm editting this text as an editor but I'm not sure to share.
-====
 
-* Best operating system for servers.
-* Open source.
-* Stable
+* i use this pattern to have only one admin on the system.
 
-----
- Goal 1
- Goal 2
-----
 
 *2. Factory Pattern*
 
