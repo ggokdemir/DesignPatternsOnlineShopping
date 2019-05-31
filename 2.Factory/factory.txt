@@ -1,0 +1,36 @@
+@startuml
+
+abstract class Creator{
+public abstract IProduct FactoryMethod();
+public string PlatformInfo()
+}
+
+class WebBrowserCreator{
+public override IProduct FactoryMethod()
+}
+
+Creator <|-- WebBrowserCreator
+
+class MobileAppCreator {
+public override IProduct FactoryMethod()
+}
+
+Creator <|-- MobileAppCreator
+
+interface IProduct{
+string Operation();
+}
+
+IProduct<|-- WebBrowserProduct 
+
+class WebBrowserProduct {
+public string Operation()
+}
+
+class MobileAppProduct{
+public string Operation()
+}
+
+IProduct<|-- MobileAppProduct
+
+@enduml
