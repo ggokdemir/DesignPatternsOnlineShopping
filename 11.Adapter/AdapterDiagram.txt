@@ -1,0 +1,17 @@
+@startuml
+
+interface ITarget{
+GetUserInformation() : string 
+}
+
+class Adaptee{
++AnotherShoppingSite() : string 
+}
+
+ITarget <|-- Adapter
+class Adapter{
+-readonly _adaptee : Adaptee 
++Adapter(Adaptee adaptee)
++GetUserInformation() : string 
+}
+@enduml
