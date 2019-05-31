@@ -106,14 +106,18 @@ It could be hard for us to add and remove without abstract factory.
 image::7.Iterator/image.png[image]
 
 * Our lucky customers can get some coupons.
-* This pattern used for sorting lucky users. 
+* This pattern used for to give customers their gifts.
 
 *8. Observer Pattern*
 
 image::8.Observer/image.png[image]
 
 * We sometimes have some discounts for some special products.
-* And clients wants to get notified about specific products.
+* And clients wants to get notified about specific discounts rates.
+* Observer pattern is the best solution for this problem.
+* Every customer have a discount treshold.
+* If a discount reached that treshold. Customer get notified.
+* We can easily add and remove customer from the observer list.
 
 
 *9. Memento Pattern*
@@ -122,20 +126,26 @@ image::9.Memento/image.png[image]
 
 * There is a shopping card for extra discounts and free products.
 * Users sometimes wants to change their cards. But new cards doesnt contains information about old purchases.
-* When customer wants old details. We use this pattern.
+* When customer wants old details and configurations. We use this pattern.
+* Customer can quickly restore their old card.
 
 *10. Command Pattern*
 
 image::10.Command/image.png[image]
 
+* There are steps to have a successful purchase.
 * This pattern used for secure purchases.
+* It takes payment amount, user info and card info. Then check them.
+* If information is consistent. Process ends with purchase.
 
 *11. Adapter Pattern*
 
 image::11.Adapter/image.png[image]
 
 
-* Our customers have accounts on the other shopping sites. We provide them to easy integration between sites.
+* Our customers have accounts on the other shopping sites. We provide them to easy integration between sites with adapter.
+
+
 
 
 
