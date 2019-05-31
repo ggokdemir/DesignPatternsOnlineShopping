@@ -1,0 +1,11 @@
+@startuml
+
+class SiteAdminSingleton{
+-static _adminId : int 
+-static _instance : SiteAdminSingleton 
+-SiteAdminSingleton(int adminId)
++getAdminId(): int 
++static Instance(int adminId) : SiteAdminSingleton 
+} 
+
+@enduml
