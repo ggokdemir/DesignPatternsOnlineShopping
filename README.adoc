@@ -6,7 +6,6 @@
 
 image::1.Singleton/image.png[image]
 
-
 [NOTE]
 ====
 I'm editting this text as an editor but I'm not sure to share.
@@ -16,17 +15,8 @@ I'm editting this text as an editor but I'm not sure to share.
 * Open source.
 * Stable
 
-IMPORTANT: A header is optional.
-
 ----
-* Goal 1
-* Goal 2
+ Goal 1
+ Goal 2
 ----
-
-[TIP]
-====
-* To specify multiple roles using the shorthand syntax, separate them by dots.
-* The order of `id` and `role` values in the shorthand syntax does not matter.
-====
-
 
